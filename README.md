@@ -1,7 +1,13 @@
 # Passport-Google
 
-[Passport](https://github.com/jaredhanson/passport) strategy for authenticating
-with [Google](http://www.google.com/) using OpenID 2.0.
+[Passport](http://passportjs.org/) strategy for authenticating with [Google](http://www.google.com/)
+using OpenID 2.0.
+
+This module lets you authenticate using Google in your Node.js applications.
+By plugging into Passport, Google authentication can be easily and
+unobtrusively integrated into any application or framework that supports
+[Connect](http://www.senchalabs.org/connect/)-style middleware, including
+[Express](http://expressjs.com/).
 
 ## Installation
 
