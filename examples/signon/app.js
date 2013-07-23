@@ -45,7 +45,7 @@ passport.use(new GoogleStrategy({
 
 
 
-var app = express.createServer();
+var app = express();
 
 // configure Express
 app.configure(function() {
