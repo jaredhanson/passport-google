@@ -26,10 +26,13 @@ Additionally, options can be supplied to specify a return URL and realm.
         returnURL: 'http://localhost:3000/auth/google/return',
         realm: 'http://localhost:3000/'
       },
-      function(identifier, done) {
+      function(identifier, profile, done) {
         User.findByOpenID({ openId: identifier }, function (err, user) {
           return done(err, user);
         });
+        console.log('displayName: ' + profile.displayName);
+        console.log('email: ' + profile.emails[0].value);
+        console.log('name: ' + profile.name.givenName + ' ' + profile.name.familyName);
       }
     ));
 
