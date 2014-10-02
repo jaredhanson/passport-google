@@ -1,5 +1,9 @@
 # Passport-Google
 
+## Deprecated:
+
+Google has deprecated OpenID for new domains, use [passport-google-oauth](https://github.com/jaredhanson/passport-google-oauth) instead.
+
 [Passport](http://passportjs.org/) strategy for authenticating with [Google](http://www.google.com/)
 using OpenID 2.0.
 
