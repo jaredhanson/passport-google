@@ -1,3 +1,7 @@
+** NOTICE: Google no-longer supports OpenID 2, and this plugin is no longer functional. Please use [Passport-Google-OAuth](https://github.com/jaredhanson/passport-google-oauth) instead. **
+
+** For more information, see the [Google OpenID 2 shutdown timetable](https://developers.google.com/identity/protocols/OpenID2Migration#shutdown-timetable). **
+
 # Passport-Google
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Google](http://www.google.com/)
