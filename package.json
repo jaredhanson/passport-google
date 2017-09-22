@@ -22,7 +22,7 @@
   "main": "./lib/passport-google",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-openid": "0.3.x"
+    "passport-openid": "git+ssh://git@github.com:ariporad/passport-openid.git"
   },
   "devDependencies": {
     "vows": "0.6.x"
