@@ -1,15 +1,14 @@
-var vows = require('vows');
-var assert = require('assert');
-var util = require('util');
-var google = require('passport-google');
-
+const vows = require('vows')
+const assert = require('assert')
+const util = require('util')
+const google = require('passport-google')
 
 vows.describe('passport-google').addBatch({
-  
+
   'module': {
-    'should report a version': function (x) {
-      assert.isString(google.version);
+    'should report a version': () => {
+      assert.isString(google.version)
     },
   },
   
-}).export(module);
+}).export(module)

@@ -2,7 +2,14 @@
   "name": "passport-google",
   "version": "0.3.0",
   "description": "Google (OpenID) authentication strategy for Passport.",
-  "keywords": ["passport", "google", "auth", "authn", "authentication", "identity"],
+  "keywords": [
+    "passport",
+    "google",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jaredhanson/passport-google.git"
@@ -10,25 +17,34 @@
   "bugs": {
     "url": "http://github.com/jaredhanson/passport-google/issues"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
+  "contributors": [
+    "Jan Cajthaml <jan.cajthaml@gmail.com>"
+  ],
   "main": "./lib/passport-google",
   "dependencies": {
     "pkginfo": "0.2.x",
     "passport-openid": "0.3.x"
   },
   "devDependencies": {
-    "vows": "0.6.x"
+    "vows": "0.8.x",
+    "jshint": "*"
   },
   "scripts": {
-    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+    "test": "NODE_PATH=lib ./node_modules/.bin/vows test/*-test.js",
+    "jshint": "./node_modules/.bin/jshint lib"
   },
-  "engines": { "node": ">= 0.6.0" }
+  "engines": {
+    "node": ">= 0.6.0"
+  }
 }
